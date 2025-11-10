@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch("http://localhost:3000/")
+    fetch("https://shopping-webpage-portfolio.onrender.com")
       .then(res => res.json())
       .then(data => setProduct(data.find(p => p.id === parseInt(id))));
   }, [id]);
