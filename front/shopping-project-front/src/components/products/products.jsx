@@ -11,7 +11,7 @@ function Products() {
 
   useEffect(() => {
     axios
-        .get("http://localhost:3000/")
+        .get("https://shopping-webpage-portfolio.onrender.com")
         .then((res) => {
         setProducts(res.data);
         console.log(res.data);
